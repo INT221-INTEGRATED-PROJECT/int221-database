@@ -7,7 +7,7 @@ services:
   mysqldb:
       image: mysql/mysql-server
       restart: always
-      enviromment:
+      environment:
           MYSQL_DATABASE: luxcars
           MYSQL_USER: backend
           MYSQL_PASSWORD: mysql
