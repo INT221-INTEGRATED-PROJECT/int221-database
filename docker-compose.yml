@@ -1,0 +1,17 @@
+services:
+      db:
+        image: mysql/mysql-server
+        restart: always
+        enviromment:
+            MYSQL_DATABASE: 'backend'
+            MYSQL_PASSWORD: 'mysql'
+            MYSQL_ROOT_PASSWORD: 'mysql'
+            ports:
+              - '3306:3306'
+            volumes:
+                - my-db:/var/lib/mysql
+networks:
+    default:
+        external:
+            name: int221-network
+
