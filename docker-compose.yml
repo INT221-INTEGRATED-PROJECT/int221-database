@@ -1,5 +1,5 @@
 services:
-      db:
+      mysqldb:
         image: mysql/mysql-server
         restart: always
         enviromment:
@@ -9,7 +9,8 @@ services:
             ports:
               - '3306:3306'
             volumes:
-                - my-db:/var/lib/mysql
+                - ~mysql:/var/lib/mysql
+                - ./data.sql:/data.sql
 networks:
     default:
         external:
