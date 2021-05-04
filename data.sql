@@ -9,8 +9,8 @@
 -- -----------------------------------------------------
 -- Schema luxcars
 -- -----------------------------------------------------
+DROP DATABASE IF EXISTS `luxcars`;
 CREATE SCHEMA IF NOT EXISTS `luxcars` DEFAULT CHARACTER SET utf8 ;
--- USE `luxcars` ;
 USE `luxcars`;
 
 DROP TABLE IF EXISTS `brands` ;
