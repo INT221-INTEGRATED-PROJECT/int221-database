@@ -3,14 +3,14 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 -- -----------------------------------------------------
-Schema luxcars
+
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema luxcars
 -- -----------------------------------------------------
 CREATE SCHEMA IF NOT EXISTS `luxcars` DEFAULT CHARACTER SET utf8 ;
--- USE `mydb` ;
+-- USE `luxcars` ;
 USE `luxcars`;
 
 DROP TABLE IF EXISTS `brands` ;
@@ -75,7 +75,7 @@ INSERT INTO `products` (`productId`,`productName`,`price`,`releasedDate`,`warran
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Colors`
+-- Table `luxcars`.`Colors`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `colors` ;
 
@@ -96,7 +96,7 @@ INSERT INTO `colors` (`colorCode`,`hexCode`) VALUES (16,'#FFDB21');
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`productcolors`
+-- Table `luxcars`.`productcolors`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `productcolors` ;
 
