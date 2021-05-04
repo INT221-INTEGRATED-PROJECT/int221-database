@@ -1,3 +1,8 @@
+version: '2'
+networks:
+  default:
+    external:
+      name: int221-network
 services:
   mysqldb:
       image: mysql/mysql-server
@@ -12,8 +17,5 @@ services:
       volumes:
           - ~/mysql:/var/lib/mysql
           - ./data.sql:/data.sql
-networks:
-  default:
-      external:
-          name: int221-network
+
 
