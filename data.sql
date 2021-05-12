@@ -37,7 +37,7 @@ INSERT INTO `brands` (`brandId`,`brandName`) VALUES (600,'Rolls Royce');
 DROP TABLE IF EXISTS `products` ;
 
 CREATE TABLE IF NOT EXISTS `products` (
-  `productId` INT(4) NOT NULL,
+  `productId` INT(4) NOT NULL AUTO_INCREMENT,
   `productName` VARCHAR(50) NOT NULL,
   `price` DECIMAL(16,9) NOT NULL,
   `releasedDate` DATE NOT NULL,
@@ -50,6 +50,7 @@ CREATE TABLE IF NOT EXISTS `products` (
     FOREIGN KEY (`brandId`)
     REFERENCES `brands` (`brandId`))
 ENGINE = InnoDB DEFAULT CHARSET=latin1;
+
 
 /*Data for the table ‘Products’*/
 
@@ -173,6 +174,7 @@ INSERT INTO `productcolors` (`productId`,`colorCode`) VALUES (1018,11);
 INSERT INTO `productcolors` (`productId`,`colorCode`) VALUES (1018,12);
 INSERT INTO `productcolors` (`productId`,`colorCode`) VALUES (1018,14);
 
+ALTER TABLE Persons AUTO_INCREMENT=1019;
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
