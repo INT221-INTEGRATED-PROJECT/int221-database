@@ -174,7 +174,7 @@ INSERT INTO `productcolors` (`productId`,`colorCode`) VALUES (1018,11);
 INSERT INTO `productcolors` (`productId`,`colorCode`) VALUES (1018,12);
 INSERT INTO `productcolors` (`productId`,`colorCode`) VALUES (1018,14);
 
-ALTER TABLE Persons AUTO_INCREMENT=1019;
+ALTER TABLE products AUTO_INCREMENT=1019;
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
